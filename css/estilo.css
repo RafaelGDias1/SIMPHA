@@ -1,0 +1,607 @@
+@import url('https://fonts.googleapis.com/css2? family= Noto+Sans:wght@100;200 & display=swap');
+
+:root{
+  --color--neutral-0: #0e0c0c;
+  --color--neutral-10: #010E54;
+  --color--neutral-30: #a8a29e;
+  --color--neutral-40: #f5f5f5;
+}
+body{
+  margin: 0;
+  font-family: 'Noto Sans', sans-serif;
+  background-color: #DAEAF7;
+}
+*{
+  padding: 0px;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  letter-spacing: 1px;
+}
+
+nav{
+  width: 100%;
+  height: 80px;
+  background: #010E54;
+}
+nav > img{
+/*height: 632px;*/
+  width: 100%px;
+  position: absolute;
+  margin: 0px;
+  top: -16px; /*altura da imagem*/
+  left: 1%; /*distancia da imagem*/
+}
+nav > img:hover{
+  cursor: pointer;
+}
+nav > ul{
+  float: right;
+  margin-right: 35px;
+}
+nav > ul > li{
+  display: inline-block;
+  line-height: 50px; /*altura da lista*/
+  margin: 0 20px; /*distancia da lista*/
+}
+nav > ul > li > a{
+  position: relative;
+  color: #DAEAF7; /*Mudar a cor da letra*/
+  font-size: 18px;
+  padding: 5px 0;
+  text-transform: uppercase;
+}
+nav > ul > li > a::before{
+  position: absolute;
+  content: '';
+  left: 0;
+  bottom: 0;
+  height: 3px;
+  width: 100%;
+  background: #DAEAF7; /*Mudar a cor do curso*/
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform .4s linear;
+}
+nav > ul > li > a:hover:before{
+  transform: scaleX(1);
+  transform-origin: right;
+}
+label #btn /* o # é um seletor de id*/
+label #cancel{
+  color: white;
+  font-size: 30px;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+#check{
+  display: none;
+}
+@media (max-width:944px){
+  nav > img{
+    left: 6%;
+    top: 20px;
+    width: 130px;
+  }
+  nav > ul > li > a{
+    font-size: 17px;
+  }
+}
+@media (max-width:860px){ /*3 negocio*/
+  label #btn{
+   display: block;
+  }
+ul{
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  background: rgba(50, 63, 80, 0.685);
+  top: 80px;
+  left: -100%;
+  text-align: center;
+  transition: all .5s;
+}
+nav > ul > li{
+  display: block;
+  margin: 50px 0;
+  line-height: 30px;
+}
+nav > ul > li > a{
+  font-size: 20px;
+}
+#check:checked ~ ul{
+  left: 0;
+}
+#check:checked ~ label #btn{
+  display: none;
+}
+#check:checked ~ label #cancel{
+  display: block;
+}
+}
+                                /*parte de cima navegação, baixo main*/
+
+main{
+  height: 100vh;
+  background: linear-gradien #DAEAF7; /*cor do site*/
+  padding: 3%;
+}
+body > form > main > div > img{
+  width: 500px;
+  position: absolute;
+  margin: 0px;
+  top: 25%; /* altura da imagem*/
+  right: 5px; /*distancia da imagem*/
+}
+ main > p{
+  text-align:start;
+  color: #010E54;
+ }
+ body> form > main > div{
+  margin-left: 5%;  
+ }
+body> form > main > div > p{
+  font-size: 50px;
+  width: 40%;
+ }
+ body> form > main > div > input{
+  height: 40px;
+  background-color: #010E54;
+  color: #fff;
+  border-radius: 5px;
+  width: 20%;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 25px;
+}
+body> form > main > div > input:hover{
+  cursor: pointer;
+}
+b{
+  color: #010E54;
+}
+.cll{
+  width: 40%;
+  margin: 0px;
+  top: center; /* altura da imagem*/
+  right: 60px; /*distancia da imagem*/
+  display: flex;
+}
+.cll > p{
+  font-size: 50px;
+  width: 100%;
+}
+.cll > p > input{
+  height: 40px;
+  background-color: #010E54;
+  color: #fff;
+  border-radius: 5px;
+  width: 300px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 25px;
+}
+.cll > p > input:hover{
+  cursor: pointer;
+}
+.homi{
+  display: flex;
+  margin-left: 5%;
+}
+.homi > img{
+  padding-left: 20%;
+}
+.homi > p{
+  font-size: 50px;
+  width: 100%;
+}
+.homi > p > input{
+  height: 40px;
+  background-color: #010E54;
+  color: #fff;
+  border-radius: 5px;
+  width: 45%;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 25px;
+}
+.homi > p > input:hover{
+  cursor: pointer;
+}
+
+                          /*parte de cima main*/
+footer{
+  width: 100%;
+  color: var(--color--neutral-40) ;
+}
+.fundo-link{
+  color: var(--color--neutral-30);
+  transition: all 0.4s;
+  text-decoration: none;
+  display: flex ;
+  align-items: center;
+  justify-content: center;
+}
+#fundo_content{
+  background-color: var(--color--neutral-10);
+  display: flex;
+  grid-template-columns: repeat(4, 1fr); /*vai deixa as 4 cores em coluna*/
+  padding: 3rem 3.5rem;
+}
+#fundo_contacts > p{
+  padding-left: 550px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+ 
+}
+
+#fundo_social_media {
+  
+  display: flex;
+  flex-direction: row;
+ align-items: center;
+  justify-content: center;
+  gap: 2rem; /*espacamento das redes*/
+  margin-top: 1.5rem; /*altura*/
+}
+#fundo_social_media .fundo-link {
+  position: relative;
+  left: 270px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 2.5rem; /*tamanho icon*/
+  width: 2.5rem;  /*largura icon*/
+  color: var(--color--neutral-40);
+  border-radius: 50%;
+  transition: all 0.4s;
+}
+#fundo_social_media .fundo-link i{
+  font-size: 1.25rem; /*muda o tamanho do icone*/
+}
+#fundo_social_media .fundo-link:hover{
+  opacity: 0.8;
+}
+#github {
+  background-color: #000000
+}
+#linkedin {
+  background-color: #4237b3;
+}
+
+
+
+@media screen and (max-width: 768px) {
+  #fundo_content{
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+}
+@media screen and (max-width: 426px) {
+  #fundo_content{
+    grid-template-columns: repeat(1, 1fr);
+  padding: 3rem 2rem;
+  }
+}
+
+                        /*parte de baixo cadastro, cima footer*/
+
+.cad-card{
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(rgb(44, 85, 122),rgb(25, 93, 124)); /*cor do site*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cad-cadastro{
+  width: 50vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.cad-image{
+  width: 25vh;
+  padding-bottom: 250px;
+  margin-left: 100px;
+}
+.desc-simpha p{
+  text-align: left;
+  font-family: 'Noto Sans', sans-serif;
+  color: #f7f7f7;
+  font-size: 25px;
+  display: flex;
+  width: 350px;
+  margin-left: -430px;
+}
+.cad-right{
+  width: 50vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cad-right a{
+  color: #f7f7f7;
+}
+.cad-right a:hover{
+  color: #0073ff;
+}
+.cad-login{
+  background: transparent;
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 30px 35px;
+  border-radius: 20px;
+  box-shadow: 0px 10px 40px black;
+}
+.cad-login > h2{
+  color: #f7f7f7;
+  font-weight: 800;
+  margin: 0;
+}
+.cad-login > h2:hover{
+  color: #0073ff;
+  transition: 0.5s;
+  cursor: pointer;
+}
+.cad {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  position: relative;
+  border-bottom: 2px solid #f5f8fa;
+  margin: 2px 0;
+}
+.cad label{
+  color: #f1f7fc;
+  margin-bottom: 10px;
+}
+.cad > input::placeholder{
+  color: #f7f7f7;
+}
+.cad > input:hover::placeholder{
+  opacity: 30%;
+  transition: 0.5s;
+}
+.cad > input{
+  width: 95%;
+  background: transparent;
+  border: none;
+  border-radius: 10px;
+  outline: none;
+  font-size: 12pt;
+  color: #e7ebee;
+  font-weight: 600;
+  padding: 15px;
+  box-sizing: border-box;
+}
+.cad .icon{
+  position: absolute;
+  right:8px;
+  font-size: 1.2em;
+  color: #9ebed1; /*muda a cor dos icon*/
+  line-height: 57px;
+}
+.btn{
+  width: 100%;
+  padding: 16px 0px;
+  margin: 25px;
+  border:none;
+  border-radius: 8px;
+  outline: none;
+  text-transform: uppercase;
+  font-weight: 800;
+  letter-spacing: 3px;
+  color: #f7f7f7;
+  background: #5d93d1;
+  cursor: pointer;
+  box-shadow: 0px 10px 40px -12px rgb(24, 26, 24);
+}
+@media only screen and (max-width: 950px) { /*para o tamanho do aparelho*/
+  .cad-login{
+    width: 85%;
+  }
+}
+@media screen and (max-width:600px) {  /* para celula tem */
+  .cad-card{
+    flex-direction: column;
+  }
+  .cad-cadastro{   
+    display: none;
+  }
+  .cad-cadastro{
+    width: 100%;
+    height: auto;
+  }
+  .cad-right{
+    width: 100%;
+    height: auto;
+  }
+.cad-cadastro-image{
+  width: 50vh;
+}
+.cad-login{
+  width: 90%;
+}
+}
+ 
+------------------ /*parte de baixo login, cima cadastro*/-------------------------
+.card{
+  width: 100vw;
+  background: #0000; /*cor do site*/
+  justify-content: center;
+  align-items: center;
+}
+.card-image{
+  width: 35vw;
+}
+.card-right{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.card-login{
+  background-size: 100%;
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 30px 35px;
+  border-radius: 20px;
+  box-shadow: 7px 5px 15px 1px black;
+  background-color: #010E54;
+}
+.card-login a{
+  width: 100%;
+}
+.card-login > h2{
+  color: #f7f7f7;
+  font-weight: 800;
+  margin: 0;
+}
+.card-login > h2:hover{
+  cursor: pointer;
+  color: #5d93d1;
+  transition: 0.5s;
+}
+.darde {
+  width: 75%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  position: relative;
+  border-bottom: 2px solid #0c85ff;
+  margin: 2px 0;
+}
+.darde label{
+  color: #f1f7fc;
+  margin-bottom: 10px;
+}
+.darde > input::placeholder{
+  color: #f7f7f7;
+}
+.darde > input:hover::placeholder{
+  opacity: 30%;
+  transition: 0.5s;
+}
+.darde > input{
+  padding-top: 30px;
+  width: 95%;
+  background: transparent;
+  border: none;
+  border-radius: 10px;
+  outline: none;
+  font-size: 12pt;
+  color: rgb(243, 242, 242);
+  font-weight: 600;
+  padding: 20px;
+  box-sizing: border-box;
+}
+.darde .icon{
+  position: absolute;
+  right: 10px;
+  font-size: 1.2em;
+  color: #9ebed1; /*muda a cor dos icon*/
+  line-height: 57px;
+}
+.butao{
+  margin-top: 20px;
+  width: 55%;
+  padding: 15px 0px;
+  border:none;
+  border-radius: 8px;
+  outline: none;
+  text-transform: uppercase;
+  font-weight: 800;
+  letter-spacing: 3px;
+  color: #010E54;
+  background-color: #DAEAF7;
+  cursor: pointer;
+  box-shadow: 0px 10px 40px -12px rgb(24, 26, 24);
+  text-align: center;
+}
+.card-login a{
+  font-weight: 1000;
+  color: #f7f7f7;
+}
+.card-login a:hover{
+  color: #5d93d1;
+}
+.butao:hover{
+  color: #0073ff;
+}
+@media only screen and (max-width: 950px) { /*para o tamanho do aparelho*/
+  .card-login{
+    width: 85%;
+  }
+}
+@media screen and (max-width:600px) {  /* para celula tem */
+  .card{
+    flex-direction: column;
+  }
+  .card-logo{   
+    display: none;
+  }
+  .card-logo{
+    width: 100%;
+    height: auto;
+  }
+  .card-right{
+    width: 100%;
+    height: auto;
+  }
+.card-logo-image{
+  width: 50vh;
+}
+.card-login{
+  width: 90%;
+}
+}
+
+                   /*tabela, parte de cima login*/
+main >table{
+  font-family: rns-sans;
+  width: 50%;
+  border-collapse: collapse;
+  text-align: center;
+  height: 10pxx;
+  position: relative;
+  margin: 0px;
+  top: 25%; /* altura da imagem*/
+  right: 5px; /*distancia da imagem*/
+}
+
+table, th, td {
+ 
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+                  }      
+.moni{
+ width: 650px;
+ position: absolute;
+ margin: 0px;
+ top: 25%; /* altura da imagem*/
+right: 5px; /*distancia da imagem*/
+                  }                              
+tr:nth-child(even){background-color: #f2f2f2}
+th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+
+  background-color: #010E54;
+  color: #DAEAF7;}

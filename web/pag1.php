@@ -1,0 +1,93 @@
+
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIMPHA</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./../css/estilo.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+
+<form method="post" action="../usuario/telalogin.php">
+
+    <nav>
+        <input type="checkbox" id="check">
+        <label for="check">
+           <i class="burges" id="btn"></i> <!--fa fa-bars--> 
+           <i class="burges-perdido" id="cancel"></i> <!--fa fa-times--> 
+        </label>
+
+       <a href="../web/pag1.php"><img src="../img/SYMPHA - LOGO 2 1.png"></a>
+
+        <ul>
+            <li><a href="../usuario/telalogin.php">Entrar</a></li>
+            <li><a href="../registro/cadastrar.php">Cria uma conta</a></li>
+            <li><a href="./suporte.html">Suporte</a></li>
+            
+        </ul>
+       
+    </nav>
+
+<main>
+
+  <div class="fisrt">
+    <p>O sistema <b>SIMPHA</b> é um sistema de <b>monitoramento de PH prático</b>, na tela do seu aparelho! </p>
+    <input type="submit" value=" SAIBA MAIS!" name="saiba">
+
+    <img src="../img/Mulher no Shape.png" alt="mulher segurando celular">
+  </div>
+
+</main>
+
+  <div class="cll">
+  <img src="../img/Aplicativo SIMPHA no Shape.png" alt="celular">
+
+  <p><b>Simples e Eficiente: </b><br>
+      Nossa plataforma digital é projetada para ser intuitiva, tornando o monitoramento de PH fácil. 
+      <input type="submit" value="QUERO BAIXAR!" name="baixar">
+  </p>
+  </div>
+
+
+  <div class="homi">
+
+    <p><b>Experimento Grátis: <br></b>
+          Baixe o SIMPHA agora e experimente <b>GRATUITAMENTE</b> por 7 dias. <br>
+          <input type="submit" value="BAIXAR AGORA!" name="baixar-agora">
+        </p>
+
+        <img src="../img/homi no shape.png" alt="Homem segurando o celular">
+  </div>
+
+
+    <footer>
+        <div id="fundo_content">
+            <div id="fundo_contacts">
+  
+              <p >Siga nas redes</p>
+
+              <div id="fundo_social_media">
+                <a target="_blank" href="#"  class="fundo-link" id="github">
+                  <i class="fa-brands fa-github"></i>
+                </a>
+
+                <a href="#" class="fundo-link" id="linkedin">
+                <i class="fa-brands fa-linkedin-in"></i>
+                </a>
+
+                
+                </a>
+               <!-- <span>&copy; 2023 Seu Site. Todos os direitos reservados.</span>-->
+                
+              </div>
+            </div>
+        </div>
+  </footer>
+
+
+  </form>
+
+</html>
